@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Strike:"
+        android:id="@+id/strike_label"
+        android:layout_gravity="top|center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ball:"
+        android:id="@+id/ball_label"
+        android:layout_gravity="top|center"
+        android:layout_below="@+id/strike_label"
+        android:layout_toLeftOf="@+id/strike_count"
+        android:layout_toStartOf="@+id/strike_count"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strike"
+        android:id="@+id/strike_button"
+        android:layout_gravity="top|center"
+        android:layout_below="@+id/ball_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ball"
+        android:id="@+id/ball_button"
+        android:layout_gravity="top|center"
+        android:layout_below="@+id/strike_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/strike_button"
+        android:layout_alignEnd="@+id/strike_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/strike_count"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_alignTop="@+id/strike_label"
+        android:layout_toRightOf="@+id/strike_label"
+        android:layout_toEndOf="@+id/strike_label"
+        android:layout_gravity="top|center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/ball_count"
+        android:layout_alignBottom="@+id/ball_label"
+        android:layout_alignLeft="@+id/strike_count"
+        android:layout_alignStart="@+id/strike_count"
+        android:layout_gravity="top|center" />
+</RelativeLayout>
